@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+    <h1>💰 Budget</h1>
+
+    <div class="card">
+      <input id="desc" placeholder="What did you spend on?">
+      <input id="amount" type="number" placeholder="Amount">
+
+      <select id="currency">
+        <option value="USD">USD</option>
+        <option value="ZAR">ZAR</option>
+      </select>
+
+      <button onclick="addTransaction()">Add</button>
+    </div>
+
+    <div class="card">
+      <h2>Total: $<span id="total">0</span></h2>
+    </div>
+
+    <div class="card">
+      <h2>Transactions</h2>
+      <div id="list"></div>
+    </div>
+
+    <div class="card">
+      <h2>Goals</h2>
+      <button onclick="addGoal()">+ New Goal</button>
+      <div id="goals"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
